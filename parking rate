@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char vehicle;
+	int hours;
+	cout << "pls enter type of vehicle\n";
+	cin >> vehicle;
+
+	switch (vehicle)
+	{
+	case 'c':
+		cout << "vehicle entered is a car\n";
+		cout << "pls enter duration\n";
+		cin >> hours;
+
+		if (hours <= 3)
+		{
+			cout << "rate is rm1.00";
+		}
+		if (hours > 3)
+		{
+			cout << "rate is RM  " << ((hours - 3)*1.50) + 1 << "for" << hours << "hours" << endl;
+		}
+		break;
+	case 'l':
+		cout << "vehicle entered is lorry\n";
+		cout << "pls enter duration\n";
+		cin >> hours;
+
+		if (hours <= 3)
+		{
+			cout << "rate is rm1.50";
+		}
+		if (hours > 3)
+		{
+			cout << "rate is RM  " << ((hours - 3)*2.50) + 1.50 << "for" << hours << "hours" << endl;
+		}
+		break;
+	case 'b':
+		cout << "vehicle entered is a bus\n";
+		cout << "pls enter duration\n";
+		cin >> hours;
+
+		if (hours <= 3)
+		{
+			cout << "rate is rm2.00";
+		}
+		if (hours > 3)
+		{
+			cout << "rate is RM  " << ((hours - 3)*3.50) + 2.00 << "for" << hours << "hours" << endl;
+		}
+		 
+
+	}
+}
+
