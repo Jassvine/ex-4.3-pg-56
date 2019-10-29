@@ -51,8 +51,11 @@ int main()
 		{
 			cout << "rate is RM  " << ((hours - 3)*3.50) + 2.00 << "for" << hours << "hours" << endl;
 		}
-		 
+		break;
+	default :
+		cout << "ERROR";
 
 	}
+	return 0;
 }
 
