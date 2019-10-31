@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int quantity;
+
+	cout << "pls enter the quantity of books\n";
+	cin >> quantity;
+
+	if (quantity > 99)
+	{
+		cout << "50% discount is given\n";
+		cout << "price is rm" << (quantity * 20)*0.5 << endl;
+	}
+	else if (quantity >= 50 && quantity <= 99)
+	{
+		cout << "40% discount is given\n";
+		cout << "price is rm" << (quantity * 20)*0.4 << endl;
+	}
+	else if (quantity >= 20 && quantity <= 49)
+	{
+		cout << "30% discount is given\n";
+		cout << "price is rm" << (quantity * 20)*0.3 << endl;
+	}
+	else if (quantity >= 10 && quantity <= 19)
+	{
+		cout << "20% discount is given\n";
+		cout << "price is rm" << (quantity * 20)*0.1 << endl;
+	}
+	else if (quantity < 0)
+	{
+		cout << "ERROR MESSAGE" << endl;
+	}
+	return 0;
+}
